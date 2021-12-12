@@ -1,0 +1,21 @@
+<div class="row justify-content-center">
+    <h3 class="col-md-4">Eliminar Proyecto</h3>
+</div>
+<div class="row justify-content-center">
+    <form action="/panel/eliminar/{{ proyecto._id }}?_method=DELETE" class="col-md-4" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre del proyecto</label>
+            <input type="text" name="nombre" id="nombre" value="{{ proyecto.nombre }}" class="form-control" disabled>
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción del proyecto</label>
+            <textarea rows="5" type="text" name="descripcion" id="descripcion" class="form-control" disabled>{{ proyecto.descripcion }}</textarea>
+        </div>
+        <div class="form-group text-center">
+            <button class="btn btn-danger form-control">
+                <i class="fas fa-trash-alt"></i> Eliminar
+            </button>
+        </div>
+        {{> information }}
+    </form>
+</div>

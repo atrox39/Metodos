@@ -1,0 +1,18 @@
+{{#if success}}
+  <div class="form-group">
+    <div class="alert alert-success" role="alert">
+      {{#each success}}
+          {{ this }}
+      {{/each}}
+    </div>
+  </div>
+{{/if}}
+{{#if error}}
+  <div class="form-group">
+    <div class="alert alert-danger" role="alert">
+      {{#each error}}
+        {{ this }}
+      {{/each}}
+    </div>
+  </div>
+{{/if}}
