@@ -1,6 +1,7 @@
 # Metodos
 Un CRUD basico con NodeJS en donde utilizamos autentificacion por sesiones, usaremos bcrypt para encriptar la contraseña del usuario, MongoDB como base de datos,
-connect flash para mostrar mensajes en nuestros formularios, handlebars como motor de vistas y expressjs como frameword backend.
+connect flash para mostrar mensajes en nuestros formularios, handlebars como motor de vistas, expressjs como frameword backend y method override para sobre
+escribir las rutas y nos permita utilizar PUT y DELETE.
 
 ### Dependencias utilizadas
 ```
